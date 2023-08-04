@@ -162,16 +162,20 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-right: 3rem;
 }
+
 
 .home-content h1 {
     font-size: 2rem;
     color: var(--drk-100);
+    letter-spacing: 3px;
 }
 .home-content h1 span {
+    letter-spacing: 1px;
     font-size: 4rem;
-    color: var(--lit-dsg);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--lit-dsg);
+    color: transparent;
 }
 
 .hanging1-img ,
@@ -205,11 +209,11 @@ body {
 }
 
 
-.home-content p {
+.home-content p{
     color: var(--drk-100);
     font-size: 1.3rem;
     text-align: justify;
-    width: 60%;
+    width: 50%;
     line-height: 24px;
     padding: 0 .5rem;
 }
@@ -1386,15 +1390,28 @@ body {
     display: inline;
 }
 .home-content{
+    width: 100%;
     & img{
         opacity: 0.25;
     }
 }
+.home-content h1{
+        font-size: 1.5rem;
+        & span{
+            font-size: 3rem;
+        }
+}
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .home-content p {
     width: 100%;
     color: var(--drk-100);
     opacity: 1;
-
+    font-size: 1rem;
 }
 
 
@@ -1417,6 +1434,10 @@ body {
     }
 }
 }
+
+.client-content > p{
+    line-height: 20px;
+}
 }
 
 
@@ -1435,6 +1456,28 @@ h2{
 h3{
     font-size: 1.3rem;
 }
+.project{
+    padding: 1rem;
+    & .project-container{
+        & .project-cont{
+            & ul{
+                flex-wrap: wrap;
+                & .list{
+                    font-size: .5rem;
+                }
+            }
+            & .projects{
+                padding: 0;
+            }
+            & .itemBox{
+                & .back{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+ }
+
 h4{
     font-size: 1.2rem;
 }
@@ -1445,9 +1488,11 @@ h4{
 }
 .about {
     & .about-container{
+        & .about-main-content{
         & .about-content{
             & h4{
-                font-size: 1.2rem;
+                font-size: 2rem;
+                font-weight: 900;
             }
          & .view-button{
             display: flex;
@@ -1455,6 +1500,7 @@ h4{
             gap: 2rem;
             }
         }
+    }
  }
  }
  .project{
@@ -1471,6 +1517,12 @@ h4{
         }
     }
  }
+ .home-content h1{
+    font-size: 1.2rem;
+    & span{
+        font-size: 3rem;
+    }
+}
 }
 
 
@@ -1498,7 +1550,15 @@ h4{
         font-size: 1rem;
     }
     }
-
+    .home{
+        min-height: 100vh;
+    }
+    .home-content h1{
+        font-size: 1.2rem;
+        & span{
+            font-size: 3rem;
+        }
+    }
     .project{
         padding: 1rem;
         & .project-container{
@@ -1526,7 +1586,7 @@ h4{
           & .client-container{
             & .client-box{
                 & .client-content{
-                    padding-inline: 1rem;
+                    padding: 1rem 1rem 1.5rem;
                 }
             }
           }
@@ -1563,4 +1623,5 @@ h4{
         }
     }
 }
+
 /* media queries starts here */
