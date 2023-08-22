@@ -13,19 +13,22 @@
 </head>
 
 <body>
+    <div class="ScrollUp" onclick="scrollToTop();">
+        <i class="fa fa-arrow-up"></i>
+    </div>
     <nav class="nav-group">
         <div class="container med-container nav-flex">
             <div class="logo">
                 <h1>Domi<span>Nick</span></h1>
             </div>
             <ul class="list-group">
-                <li class="list-items active" id="home">Home</li>
-                <li class="list-items" id="about">About</li>
-                <li class="list-items" id="service">Service</li>
-                <li class="list-items" id="portfolio">portfolio</li>
-                <li class="list-items" id="project">projects</li>
-                <li class="list-items" id="feed">Feeds</li>
-                <li class="list-items" id="contact">Contact</li>
+                <li class="list-items"><a class="navLink"  href="#home">Home</a></li>
+                <li class="list-items"><a class="navLink" href="#about">About</a></li>
+                <li class="list-items"><a class="navLink" href="#service">Services</a></li>
+                <li class="list-items"><a class="navLink" href="#project">Projects</a></li>
+                <li class="list-items"><a class="navLink" href="#tool">Tools</a></li>
+                <li class="list-items"><a class="navLink" href="#feeds">Feedback</a></li>
+                <li class="list-items"><a class="navLink" href="#contact">Contact</a></li>
             </ul>
             <i class="fa fa-bars bar"></i>
         </div>
@@ -34,16 +37,16 @@
     </nav>
     <aside>
         <ul class="aside-group">
-            <li class="list-items active">Home</li>
-            <li class="list-items">About</li>
-            <li class="list-items">Service</li>
-            <li class="list-items">portfolio</li>
-            <li class="list-items">projects</li>
-            <li class="list-items">Feeds</li>
-            <li class="list-items">Contact</li>
+            <li class="list-items active"><a href="#home">Home</a></li>
+            <li class="list-items"><a href="#service">Services</a></li>
+            <li class="list-items"><a href="#project">Projects</a></li>
+            <li class="list-items"><a href="#about">About</a></li>
+            <li class="list-items"><a href="#tool">Tools</a></li>
+            <li class="list-items"><a href="#feeds">Feedback</a></li>
+            <li class="list-items"><a href="#contact">Contact</a></li>
         </ul>
     </aside>
-    <div class="home" id="home">
+    <section class="home" id="home">
         <div class="home-container med-container">
             <div class="home-content">
                 <img src="./images/hang2.png" alt="" class="hanging1-img">
@@ -51,12 +54,12 @@
                 <img src="./images/hang2.png" alt="" class="hanging3-img">
                 <h1>Exploring ideas, creating solutions. <br> <span> Welcome to my world!</span> </h1>
                 <p>I'm so happy you're here because this is where my creativity and enthusiasm come to life, exhibiting the jobs and encounters that have formed my career as a web designer, web developer, graphic designer, video editor, and many other things.</p>
-                <a href="#" class="home-btn">Let's Talk</a>
+                <a href="#contact" class="home-btn">Let's Talk</a>
             </div>
         </div>
 
-    </div>
-    <div class="service" id="service">
+    </section>
+    <section class="service" id="service">
         <div class="heading">
             <h1 class="header">services</h1>
             <p>I render services in all of the following</p>
@@ -88,8 +91,8 @@
             </div>
             <img src="./images/hang1.png" class="hanger" alt="">
         </div>
-    </div>
-    <div class="project" id="project">
+    </section>
+    <section class="project" id="project">
         <div class="project-container med-container">
             <h3 class="header">Projects</h3>
             <div class="project-cont">
@@ -105,7 +108,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Agency Website<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>showcasing expertise, services, portfolio, connecting clients with innovative solutions.</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -127,7 +130,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>UI/UX design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p> intuitive, user-friendly, aesthetic, streamlined shopping and checkout experience."</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -149,7 +152,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Graphics Design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>visual storytelling, aesthetics, conveying messages, balancing form and function</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -171,7 +174,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Graphics Design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>visual storytelling, aesthetics, conveying messages, balancing form and function</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -193,7 +196,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Educational Website<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>informative, interactive, engaging content, fostering learning and growth.</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -215,7 +218,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>UI/UX design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p> intuitive, user-friendly, aesthetic, streamlined shopping and checkout experience.?</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -237,7 +240,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Logo Design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p> symbolic, memorable, representative, blending simplicity with brand identity.</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -259,7 +262,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Graphics design<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>visual storytelling, aesthetics, conveying messages, balancing form and function</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -281,7 +284,7 @@
                         <div class="front">
                             <div class="project-description">
                                 <h1>Agency Website<span>12/05/2023</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum?</p>
+                                <p>showcasing expertise, services, portfolio, connecting clients with innovative solutions.</p>
                             </div>
                             <div class="project-image">
                                 <div class="cover-bg"></div>
@@ -302,8 +305,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="about" id="about">
+    </section>
+    <section class="about" id="about">
         <div class="about-container med-container">
             <div class="about-main-content">
                 <div class="about-image">
@@ -311,19 +314,20 @@
                 </div>
                 <div class="about-content">
                     <h3 class="header">About me</h3>
-                    <br>
                     <h4>I am Dominic Chigozie</h4>
                     <div class="text">
                         <p>A versatile web developer with experience in building engaging digital environments. I've developed my expertise over the years using a variety of web development tools and technologies, always aiming to create responsive and user-friendly websites.</p>
                         <p>
                         I'm proficient in HTML, CSS, and JavaScript, and I have an affinity for designing engaging online interfaces. I ensure sure that my work is responsive and provides the best user experience by employing frameworks like Bootstrap and React. With practical WordPress experience, I've built, updated, and redesigned a number of websites, ensuring that the material is always current and the navigation is always clear. With a foundation in PHP and a working knowledge of Python and Java, I can build effective server-side functionalities. I have experience maintaining data security and integrity when working with databases like MySQL and SQLite.
+                        <br>
+                        <br>
                         I'm passionate about both graphics and UI/UX design in addition to coding. I believe in the union of form and function, making sure each website not only functions perfectly but also looks good.</p>
 
                     </div>
 
                     <div class="view-button">
-                        <a href="#" class="about-btn">Let's Talk</a>
-                        <a href="#" class="about-btn">Download CV</a>
+                        <a href="#contact" class="about-btn">Let's Talk</a>
+                        <a href="./CV.docx" class="about-btn">Download CV</a>
                         <button class="view-more-btn">View more <i class="fa fa-arrow-down down"></i></button>
                     </div>
 
@@ -350,7 +354,7 @@
                     </div>
                     <div class="col">
                         <div class="about-box">
-                            <h4>First School Leaving Certificate<span>12/20/2013</span></h4>
+                            <h4>First School Leaving Certificate<span>20/12/2013</span></h4>
                             <p>Rev. Fr Ekwu Memorial Nursery and Primary School</p>
                             <span>FSLC</span>
                         </div>
@@ -362,114 +366,95 @@
                     <h1>Experience</h1>
                     <div class="col">
                         <div class="about-box">
-                            <h4>Name<span>12/20/2013</span></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, possimus.</p>
-                            <span>Cert</span>
+                            <h4>Web developer<span>1/2/2023</span></h4>
+                            <p>codes, maintains, ensures functionality and user experience of websites.</p>
+                            <span>Freelance</span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="about-box">
-                            <h4>Name<span>12/20/2013</span></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, possimus.</p>
-                            <span>Cert</span>
+                            <h4>Wordpress<span>20/12/2022</span></h4>
+                            <p> open-source CMS, simplifying website creation, management, and customization.</p>
+                            <span>Freelance</span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="about-box">
-                            <h4>Name<span>12/20/2013</span></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, possimus.</p>
-                            <span>Cert</span>
+                            <h4>UI/UX designer<span>Till Date</span></h4>
+                            <p>shapes user interfaces, optimizes interaction, enhances user experience</p>
+                            <span>Myself</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="tool">
+    </section>
+    <section class="tool" id="tool">
         <h1 class="header">Tools</h1>
         <swiper-container class="mySwiper tool-container med-container" init="false">
             <swiper-slide class="tool-box">
                 <i class="fab fa-html5"></i>
                 <h1 class="number">01</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>HTML, or HyperText Markup Language, is the standard markup language used to create web pages and display content online.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-css3"></i>
                 <h1 class="number">02</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>CSS, or Cascading Style Sheets, defines how HTML elements are displayed on web pages, enabling design flexibility.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-php"></i>
                 <h1 class="number">03</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-wordpress"></i>
                 <h1 class="number">04</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>WordPress is a popular open-source content management system often used for blogging and diverse web design applications.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-figma"></i>
                 <h1 class="number">05</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>Figma is a cloud-based design tool for collaborative interface design, prototyping, and user experience workflows.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fa fa-database"></i>
                 <h1 class="number">06</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>MySQL is an open-source relational database management system used for storing/managing data in various applications and websites.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-youtube"></i>
                 <h1 class="number">07</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>YouTube is a global video-sharing platform where users upload, view, and engage with videos, which they learn from</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-react"></i>
                 <h1 class="number">08</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>React is a JavaScript library developed by Facebook, used for building user interfaces, especially for single-page applications.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-bootstrap"></i>
                 <h1 class="number">09</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>Bootstrap is a responsive, open-source front-end framework designed to facilitate web development with HTML, CSS, and JavaScript.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fa fa-edit"></i>
                 <h1 class="number">10</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>Shotcut is a comprehensive, cross-platform video editing software with features. It's used by professionals to create and edit videos.</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-java"></i>
                 <h1 class="number">11</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
-            </swiper-slide>
-            <swiper-slide class="tool-box">
-                <i class="fa fa-video-slash"></i>
-                <h1 class="number">12</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>Java is an object-oriented programming language designed for portability, used in various applications, from web to mobile</p>
             </swiper-slide>
             <swiper-slide class="tool-box">
                 <i class="fab fa-github"></i>
                 <h1 class="number">13</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quod placeat eius. Maxime, natus
-                    doloribus?</p>
+                <p>GitHub, owned by Microsoft, facilitates collaborative coding, version control, and project management through its platform.</p>
             </swiper-slide>
         </swiper-container>
-    </div>
-    </div>
-    <div class="comment" id="feed">
+    </section>
+    <section class="comment" id="feeds">
         <div class="comment-container med-container">
             <h1 class="header">Clients says</h1>
             <swiper-container class="mySwipe client-container" init="false">
@@ -541,8 +526,8 @@
             </swiper-container>
 
         </div>
-    </div>
-    <div class="contact" id="contact">
+    </section>
+    <section class="contact" id="contact">
         <div class="contact-container med-container">
             <h1 class="header">Get Me</h1>
             <div class="contact-row">
@@ -579,7 +564,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="./js/script.js"></script>
     <script src="./js/swiper-element-bundle.min.js"></script>
 

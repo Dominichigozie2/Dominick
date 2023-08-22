@@ -66,7 +66,6 @@ const accord = document.querySelector(".view-more-btn");
 const sectionOne = document.querySelector(".home");
 const remove = document.querySelector("nav");
 
-console.log(sectionOne, remove);
 
 const option = {
     root: null,
@@ -110,3 +109,55 @@ bar.addEventListener("click", () =>{
     bar.classList.replace("fa-times", "fa-bars");
   });
 });
+
+
+
+
+
+
+
+
+
+// scrolltotop
+
+window.addEventListener("scroll", function(){
+  var scroll = document.querySelector(".ScrollUp");
+  scroll.classList.toggle("active", window.scrollY > 500)
+})
+
+function scrollToTop(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+// ===============//
+
+
+
+
+
+// ======= Nav onscroll animations==========//
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll(".navLink");
+
+window.onscroll = () =>{
+  sections.forEach(sec =>{
+    let top = window.scrollY;
+    let offset = sec.offsetTop -150;
+    let height = sec.offsetHeight;
+
+    let id = sec.getAttribute("id");
+
+    if(top >= offset && top < offset + height){
+      navLinks.forEach(links => {
+        links.classList.remove("active");
+        document.querySelector(".navLink[href*=" + id +"]").classList.add("active");
+      });
+    }
+  });
+}
+
+console.log(navLinks);
+// ======= Nav onscroll animations==========//
