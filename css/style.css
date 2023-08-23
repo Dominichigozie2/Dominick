@@ -114,7 +114,9 @@ body {
 }
 
 .list-items:hover::before,
-.list-group .active::before {
+.list-group .active::before,
+.aside-group .active::before
+ {
     content: "";
     position: absolute;
     top: 10px;

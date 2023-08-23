@@ -98,7 +98,6 @@ const bar = document.querySelector(".bar");
 bar.addEventListener("click", () =>{
   const aside = document.querySelector("aside");
   aside.classList.toggle("display");
-  console.log(aside);
   if(aside.classList.contains("display")){
     bar.classList.replace("fa-bars", "fa-times");
   }else{
@@ -159,5 +158,4 @@ window.onscroll = () =>{
   });
 }
 
-console.log(navLinks);
 // ======= Nav onscroll animations==========//
