@@ -38,13 +38,15 @@ document.querySelectorAll('.list').forEach(function(button) {
     });
   });
 
+
+
 const accord = document.querySelector(".view-more-btn");
   accord.addEventListener('click', () =>{
     const men = document.querySelector(".about-details");
     const arrow = document.querySelector(".down");
 
     men.classList.toggle("open");
-    console.log(men);
+
     if(men.classList.contains("open")){
         men.style.height = `${men.scrollHeight }px`;
         men.classList.add("show");
